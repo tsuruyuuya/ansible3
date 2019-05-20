@@ -4,6 +4,8 @@
     path: /etc/apt/sources.list
     regexp: "us.archive"
     replace: "jp.archive"
+  notify:
+   -リゾルバの更新
 - name: リポジトリの更新
   apt:
     update_cache: True
